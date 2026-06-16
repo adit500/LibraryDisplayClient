@@ -1,0 +1,116 @@
+/* Global settings to reset margins and establish font rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centering the login card perfectly on the screen */
+body {
+    background-color: #f4f7f6;
+    display: flex;          /* Activates Flexbox container layouts */
+    justify-content: center; /* Aligns the form horizontally in the center */
+    align-items: center;     /* Aligns the form vertically in the center */
+    height: 100vh;           /* Forces the body to take 100% of the screen height */
+}
+
+html, body, app-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Forces the containers to stretch to full view */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7f6;
+}
+
+
+/* Designing the outer container box */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+    /* Absolute centering overrides all parent layout rules */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading alignment */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333333;
+}
+
+/* Organizing spacing between individual input sections */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling to sit above fields */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Sizing and borders for text fields */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Active outline accent change on click/focus */
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Formatting for miscellaneous text layouts */
+.form-actions {
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.forgot-password {
+    color: #007bff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Custom button accentuation, scaling, and animation curves */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button darkening adjustment when cursor rests over it */
+.login-btn:hover {
+    background-color: #0056b3;
+}
